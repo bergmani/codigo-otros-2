@@ -1,3 +1,6 @@
+<!-- Ingrid Bergman
+    4-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,17 +8,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <link rel="stylesheet" href="./styles/formulario.css"> <!--Se cambia el nombre y se guardan en carpetas-->
+  <script src="./js/formulario.js" ascyn defer></script> <!-- Se cambia ruta-->
   <title>Formulario</title>
 </head>
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+  <form class="form">
     Nombre <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    Edad <input type="number" min="18" name="age" id="age"> <!-- se coloca minimo-->
     <br />
 
     Nacionalidad
@@ -25,16 +29,14 @@
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
     </select>
-    <br />
+    <br>
     <input type="submit">
   </form>
 
   <div>
-    <h2>Lista de invitados</h2>
+    <h2 id="guestList">Lista de invitados</h2>
 
   </div>
-
-  <script src="../formulario.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,18 @@
-var formulario = document.querySelector("#form")
+var form = document.querySelector(".form") //se cambia el # por . porque es una clase
 
-formulario.onsubmit = function(e) {
-
+form.onsubmit = function(e) {
+//Se cambiaron los nombres de las variables
   e.prevent();
   
-  var n = formulario.elements[0]
-  var e = formulario.elements[1]
-  var na = formulario.elements[2]
+  var namePerson = form.elements[0]
+  var age = form.elements[1]
+  var nationality = form.elements[2]
 
-  var nombre = n.value
-  var edad = e.value
+  var nombre = namePerson.value
+  var edad = age.value
 
-  var i = na.selectedIndex
-  var nacionalidad = na.options[i].value
+  var i = nationality.selectedIndex
+  var nacionalidad = nationality.options[i].value
   console.log(nombre, edad)
   console.log(nacionalidad)
 
